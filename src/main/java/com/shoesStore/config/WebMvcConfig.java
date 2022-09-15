@@ -1,4 +1,4 @@
-package com.shoseStore.config;
+package com.shoesStore.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

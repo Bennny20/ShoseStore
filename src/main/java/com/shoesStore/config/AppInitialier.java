@@ -1,4 +1,4 @@
-package com.shoseStore.config;
+package com.shoesStore.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

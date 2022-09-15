@@ -1,4 +1,4 @@
-package com.shoseStore.entity;
+package com.shoesStore.entity;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

@@ -1,4 +1,4 @@
-package com.shoseStore.authentication;
+package com.shoesStore.authentication;
 
 public class MyDBAuthenticationService {
 
