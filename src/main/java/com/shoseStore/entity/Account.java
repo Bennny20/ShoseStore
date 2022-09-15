@@ -6,8 +6,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Accouts")
-public class Acoount {
+@Table(name = "Accounts")
+public class Account {
 		
 	public static final String ROLE_ADMIN = "ADMIN";
 	public static final String ROLE_USER = "USER";
