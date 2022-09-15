@@ -10,7 +10,7 @@ public class Size {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "code", length = 20, nullable = false)
-	private String sizeCode;
+	private int sizeCode;
 	
 	@Column(name = "numSize" , nullable = false)
 	private int numSize;
@@ -18,14 +18,14 @@ public class Size {
 	/**
 	 * @return the sizeCode
 	 */
-	public String getSizeCode() {
+	public int getSizeCode() {
 		return sizeCode;
 	}
 
 	/**
 	 * @param sizeCode the sizeCode to set
 	 */
-	public void setSizeCode(String sizeCode) {
+	public void setSizeCode(int sizeCode) {
 		this.sizeCode = sizeCode;
 	}
 
