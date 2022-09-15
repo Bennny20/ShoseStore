@@ -20,7 +20,7 @@ public class brandModel {
 	
 	@Column(name = "brandName")
 	@NotEmpty(message = "Name is required")
-	@Length(min = 1, max = 50, message = "Maximum code is 50")
+	@Length(min = 1, max = 50, message = "Maximum name is 50")
 	private String brandName;
 	
 	public brandModel() {
