@@ -1,7 +1,9 @@
 package com.shoesStore.entity;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,6 +11,7 @@ import javax.persistence.ForeignKey;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -37,6 +40,9 @@ public class Order {
 	
 	@Column(name = "orderNum")
 	private int orderNum;
+	
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "order", cascade={CascadeType.ALL})
+	private List<OrderDetail> orderDetails;
 
 	/**
 	 * @return the orderID

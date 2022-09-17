@@ -27,8 +27,8 @@ public class AppContext {
 	public LocalSessionFactoryBean sessionFactory() {
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource());
-		sessionFactory.setPackagesToScan(new String[] {"com.shoseStore.entity"});
-		sessionFactory.setHibernateProperties(null);
+		sessionFactory.setPackagesToScan(new String[] {"com.shoesStore.entity"});
+		sessionFactory.setHibernateProperties(hibernateProperties());
 		return sessionFactory;
 	}
 	
